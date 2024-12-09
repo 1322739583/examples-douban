@@ -4,9 +4,9 @@ const resolve = (dir) => path.resolve(__dirname, dir);
 module.exports = {
   webpack: {
     alias: {
-      "@": resolve("src"),
-      components: resolve("src/components"),
-      utils: resolve("src/utils"),
+      // "@": resolve("src"),
+      // components: resolve("src/components"),
+      // utils: resolve("src/utils"),
     },
   },
   //配置craco提供的plugin
