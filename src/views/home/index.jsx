@@ -1,5 +1,7 @@
 import { memo, useEffect } from "react";
-import request from "../services/index";
+import request from "@/services/index";
+import { HomeWrapper } from "./style";
+import HomeBanner from "./components/banner/index";
 
 const Home = memo((props) => {
   useEffect(() => {
@@ -8,11 +10,9 @@ const Home = memo((props) => {
     });
   }, []);
   return (
-    <div style={{ color: "lightblue" }}>
-      Home
-      {/* <Logo style={{ color: "lightblue" }} /> */}
-      {/* <img alt="" src="../assets/svg/logo-douban.svg"></img> */}
-    </div>
+    <HomeWrapper>
+      <HomeBanner></HomeBanner>
+    </HomeWrapper>
   );
 });
 export default Home;

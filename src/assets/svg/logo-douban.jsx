@@ -4,7 +4,7 @@ const DoubanLogo = memo((props) => {
   return (
     <svg
       t="1733816104699"
-      class="icon"
+      className="icon"
       viewBox="0 0 1024 1024"
       version="1.1"
       p-id="4313"
