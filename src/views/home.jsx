@@ -7,6 +7,12 @@ const Home = memo((props) => {
       console.log(res);
     });
   }, []);
-  return <div>Home</div>;
+  return (
+    <div style={{ color: "lightblue" }}>
+      Home
+      {/* <Logo style={{ color: "lightblue" }} /> */}
+      {/* <img alt="" src="../assets/svg/logo-douban.svg"></img> */}
+    </div>
+  );
 });
 export default Home;
