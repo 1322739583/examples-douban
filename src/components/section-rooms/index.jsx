@@ -1,14 +1,15 @@
 import { memo } from "react";
 import RoomItem from "../room-item/index";
+import { RoomWrapper } from "./style";
 
 const SectionRooms = memo((props) => {
-  const { goodPriceInfo } = props;
+  const { roomList, itemWidth } = props;
   return (
-    <ul className="room-list">
-      {goodPriceInfo?.list.slice(0, 8).map((item, index) => {
-        return <RoomItem itemData={item} key={index} />;
+    <RoomWrapper>
+      {roomList?.slice(0, 8).map((item, index) => {
+        return <RoomItem itemWidth={itemWidth} itemData={item} key={index} />;
       })}
-    </ul>
+    </RoomWrapper>
   );
 });
 export default SectionRooms;
